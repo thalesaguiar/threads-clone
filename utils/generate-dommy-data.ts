@@ -45,13 +45,13 @@ export function createRamdomThread(): Thread {
             author: createRamdomUser(),
             content: faker.lorem.sentence(),
             likes: Math.floor(Math.random() * 1000),
-            createAt: faker.date.recent().toISOString(),
+            createdAt: faker.date.recent().toISOString(),
         })),
         repliesCount: Math.floor(Math.random() * 100),
         likesCount: Math.floor(Math.random() * 1000),
         mention: Math.random() > 0.5,
         mentionUser,
-        createAt: faker.date.recent().toISOString(),
+        createdAt: faker.date.recent().toISOString(),
     };
 }
 
